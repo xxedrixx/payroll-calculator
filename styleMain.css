@@ -1,0 +1,304 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font: 16px "Fira Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* This will make it take up the remaining space */
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2%;
+  margin-bottom: 2%;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.ex {
+  margin-top: 0px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.ex a {
+  text-decoration: none;
+}
+
+.intro {
+  margin-top: 0px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.intro a {
+  text-decoration: none;
+}
+
+/* iframe */
+.tableau {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+iframe {
+  overflow: hidden;
+}
+
+.table {
+  display: flex;
+  align-items: center;
+}
+
+.form-switch .form-check-input:focus {
+  border-color: rgba(0, 0, 0, 0.25);
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+.form-switch .form-check-input:checked {
+  background-color: #30d158;
+  border-color: #30d158;
+  border: none;
+}
+
+.switchMobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .switch {
+    display: none;
+  }
+  .switchMobile {
+    display: block;
+  }
+  .tableau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+}
+
+/* CONTACT FORM */
+/* CONTACT FORM */
+/* CONTACT FORM */
+/* CONTACT FORM */
+/* CONTACT FORM */
+.contact-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* CONTACT FORM */
+/* CONTACT FORM */
+/* CONTACT FORM */
+/* CONTACT FORM */
+/* CONTACT FORM */
+
+.contactCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 660px) {
+  .contactCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+}
+
+/* CASE CHOICE FORM */
+/* CASE CHOICE FORM */
+/* CASE CHOICE FORM */
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add spacing between input groups */
+}
+
+.input div {
+  margin: 0;
+  min-width: 150px; /* Adjust the width as needed */
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+}
+
+.radio input[type="radio"] {
+  margin-right: 5px; /* Adjust the spacing as needed */
+}
+/* CASE CHOICE FORM*/
+/* CASE CHOICE FORM*/
+/* CASE CHOICE FORM*/
+
+.instructionLarge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+.instructionMobile {
+  display: none;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.formMobile {
+  display: none;
+}
+
+.formLarge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+@media (max-width: 990px) {
+  .formLarge {
+    display: none;
+  }
+  .formMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .instructionLarge {
+    display: none;
+  }
+  .instructionMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+  }
+}
+
+.output {
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.radio {
+  width: fit-content;
+  border: 1px solid #666;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  text-align: center;
+}
+.radio input {
+  display: none;
+}
+.radio label {
+  font-family: sans-serif;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 50px;
+}
+
+.radio label:last-of-type {
+  border-right: 0;
+}
+.radio label:hover {
+  background: #eee;
+}
+.radio input:checked + label {
+  background: #30d158;
+}
+
+/* contact and email */
+/* contact and email */
+.alert-success {
+  z-index: 1;
+  background: #d4edda;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 40px;
+  width: 100%;
+  border-left: 8px solid #3ad66e;
+  border-radius: 4px;
+}
+.alert-error {
+  z-index: 1;
+  background: #fff3cd;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 40px;
+  width: 100%;
+  border-left: 8px solid #ffa502;
+  border-radius: 4px;
+}
+
+/* contact and email */
+/* contact and email */
